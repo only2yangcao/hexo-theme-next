@@ -88,5 +88,14 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
+
+  {% if page.booklist %}
+  <script>
+    var bookcat = "#计算机, #数学, #物理, #化学, #其他, #科普向, #社科文学向, #艺术向, #诗, #影集, #散文杂文, #小说, #传记";
+    $(bookcat).each(function(i, e){
+      $(e).text($(e).text() + "（" + $(e).next('ul').first().children().length + "）");
+    });
+  </script>
+  {% endif %}
 </body>
 </html>

@@ -104,7 +104,7 @@
                         #}{{ name }}{#
                       #}{% endif %}{#
                   #}</a>
-                  </span>
+                  </span>{% if name == "Mail" %}<br/>{% endif %}
                 {% endfor %}
             </div>
           {% endif %}
