@@ -153,6 +153,7 @@ links:
   无垠: https://flyhigher.top
   Test2g: https://test2g.xyz
   module ZephRay;: http://zephray.cnvintage.org/
+  刘伟的博客: https://darrenliuwei.com
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -234,7 +235,7 @@ post_meta:
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: false
+  item_text_total: true
   awl: 25
   wpm: 200
 
@@ -525,6 +526,7 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
+  security: true
   app_id: CQHA0XYIEmXVj87qQ88SlSIb-gzGzoHsz
   app_key: JxvMHcn828RoSEgcdbK37h3o
 
@@ -549,7 +551,7 @@ busuanzi_count:
   site_uv_footer:
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: 已有<!--i class="fa fa-eye"></i--> 
+  site_pv_header: 已有<!--i class="fa fa-eye"></i-->  
   site_pv_footer: 次到访 w
   # custom pv span for one page only
   page_pv: false
