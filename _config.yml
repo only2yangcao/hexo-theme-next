@@ -469,7 +469,7 @@ valine:
   appkey: vtExMxDaQlai4paYiSxSA67g
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  placeholder: qwq写点啥？ # comment box placeholder
   avatar: retro # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
