@@ -11,8 +11,9 @@
 
   {% if theme.busuanzi_count.total_views %}
     <span class="site-pv" title="{{ __('footer.total_views') }}">
-      <i class="fa fa-{{ theme.busuanzi_count.total_views_icon }}"></i>
+      已有<!--i class="fa fa-{{ theme.busuanzi_count.total_views_icon }}"></i-->
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次到访 w
     </span>
   {% endif %}
 </div>
