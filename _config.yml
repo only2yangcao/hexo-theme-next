@@ -53,7 +53,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "LEAFERx,博客,技术,编程,coding"
+keywords: "LEAFERx,博客,技术,编程,coding,前端"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -123,7 +123,7 @@ menu:
 # Enable/Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -172,14 +172,15 @@ social_icons:
 # Blog rolls
 links_icon: link
 links_title: 大佬们qwq
-links_layout: block
-#links_layout: inline
+#links_layout: block
+links_layout: inline
 links:
   Maomi's Blog: https://maomihz.com
   无垠: https://flyhigher.top
   Test2g: https://test2g.xyz
   module ZephRay;: http://zephray.cnvintage.org/
   刘伟的博客: https://darrenliuwei.com
+  Putown的葡萄棚: http://putown.org/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -194,7 +195,7 @@ toc:
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
@@ -252,8 +253,8 @@ auto_excerpt:
 # Post meta display settings
 post_meta:
   item_text: true
-  created_at: false
-  updated_at: true
+  created_at: true
+  updated_at: false
   # Only show 'updated' if different from 'created'.
   updated_diff: false
   categories: true
@@ -276,7 +277,7 @@ symbols_count_time:
 # Reward
 reward_comment: 如果我的文章对你有很大帮助 那么不妨？
 wechatpay: /images/wechat-pay.jpg
-#alipay: /images/alipay.jpg
+alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
 # Related popular posts
