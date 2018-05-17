@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 
+{# NexT version #}
+{% set version = next_env('version') %}
+
+{# Language & Config #}
+{% set title = __('title') !== 'title' && __('title') || config.title %}
+{% set subtitle = __('subtitle') !== 'subtitle' && __('subtitle') || config.subtitle %}
+{% set author = __('author') !== 'author' && __('author') || config.author %}
+{% set description = __('description') !== 'description' && __('description') || config.description %}
+
 {% set html_class = 'theme-next ' + theme.scheme %}
 {% if theme.motion.enable %}
   {% set html_class = html_class + ' use-motion' %}
@@ -96,6 +105,7 @@
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/bookmark.swig' %}
+  {% include '_third-party/copy-code.swig' %}
 
   {% if page.booklist %}
   <script>
