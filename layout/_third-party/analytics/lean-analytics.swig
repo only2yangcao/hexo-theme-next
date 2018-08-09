@@ -1,4 +1,4 @@
-{% if theme.leancloud_visitors.enable %}
+{% if theme.leancloud_visitors.enable and !theme.valine.visitor %}
 
   {# custom analytics part create by xiamo; edited by LEAFERx #}
   <script>
@@ -45,7 +45,6 @@
       var $visitors = $(".leancloud_visitors");
       var url = $visitors.attr('id').trim();
       var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
 
       Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function ({ results }) {
