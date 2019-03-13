@@ -69,11 +69,11 @@ footer:
   icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
     # `heart` is recommended with animation in red (#ff0000).
-    name: heartbeat
+    name: heart
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#ff0000"
 
   # If not defined, will be used `author` from Hexo main config.
   copyright: LEAFERx
@@ -198,6 +198,7 @@ links:
   module ZephRay;: http://zephray.cnvintage.org/
   刘伟: https://darrenliuwei.com
   Putown的葡萄棚: http://putown.org/
+  Danis Jiang基地: http://www.danisjiang.xyz/
 
 # Sidebar Avatar
 avatar:
