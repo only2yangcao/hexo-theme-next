@@ -200,7 +200,15 @@
               {% if theme.post_meta.item_text %}
                 <span class="post-meta-item-text">{{ __('post.views') + __('symbol.colon') }}</span>
               {% endif %}
-                <span class="leancloud-visitors-count"></span>
+                {% if theme.leancloud_visitors.enable %}
+                  {% if is_index %}
+                    {{ leancloud_counter({ url: url_for(post.path) }) }}
+                  {% else %}
+                    {{ leancloud_counter({ action: 'inc' }) }}
+                  {% endif %}
+                {% else %} {# valine counter #}
+                  <span class="leancloud-visitors-count"></span>
+                {% endif %}
             </span>
           {% endif %}
 
@@ -342,12 +350,12 @@
       {% include '../_partials/post/wechat-subscriber.swig' %}
     {% endif %}
 
-    {% if page.reward === undefined and theme.reward.enable %}
+    {% if page.reward === undefined and theme.reward_settings.enable %}
       {% set reward_able = true %}
     {% else %}
       {% set reward_able = page.reward %}
     {% endif %}
-    {% if reward_able and (theme.reward.alipay or theme.reward.wechatpay or theme.reward.bitcoin) and not is_index %}
+    {% if reward_able and not is_index %}
       <div>
         {% include '../_partials/post/reward.swig' %}
       </div>
