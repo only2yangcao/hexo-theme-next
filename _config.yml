@@ -213,18 +213,18 @@ social_icons:
   transition: false
 
 # Blog rolls
-links_icon: link
-links_title: 大佬们qwq
+#links_icon: link
+#links_title: 大佬们qwq
 #links_layout: block
-links_layout: inline
-links:
-  Maomi's Blog: https://maomihz.com
-  无垠: https://flyhigher.top
-  Test2g: https://test2g.xyz
-  module ZephRay;: http://zephray.cnvintage.org/
-  刘伟: https://darrenliuwei.com
-  Putown的葡萄棚: http://putown.org/
-  Danis Jiang基地: http://www.danisjiang.xyz/
+#links_layout: inline
+#links:
+#Maomi's Blog: https://maomihz.com
+# 无垠: https://flyhigher.top
+# Test2g: https://test2g.xyz
+# module ZephRay;: http://zephray.cnvintage.org/
+# 刘伟: https://darrenliuwei.com
+# Putown的葡萄棚: http://putown.org/
+# Danis Jiang基地: http://www.danisjiang.xyz/
 
 # Sidebar Avatar
 avatar:
